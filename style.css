@@ -1,139 +1,167 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: darkslategrey;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin:0;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
 }
+
+/*styling for nav bar*/
+
+header{
+    background-color: lightseagreen;
+}
+
+.menu{
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 55%;
+}
+
+.nav{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+/*styling for main content*/
+.main{
+    min-height: 100vh;
+    min-width: 80vw;
+    background-color: rgb(132, 129, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.main-heading{
+    position: absolute;
+    top: 7rem;
+    left: 25%;
+    font-weight: 2rem;
+}
+
+.name{
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    font-weight: 2rem;
+}
+
+.profile-photo{
+    height: 18rem;
+    width: 18rem;
+    position: relative;
+    bottom: 3rem;
+    border-radius: 50%;
+    background-image: url("profile\ photo.jpg") ;
+    background-size: cover;
+}
+
+.main-text{
+    position: absolute;
+    bottom: 8rem;
+    left: 20%;
+}
+
 /*styling for contact bar */
 #contact_bar{
-    height: 2rem;
+    height: 4rem;
     width: 100%;
     background-color: brown;
     position: fixed;
     bottom: 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.cb-1{
+    height: 55%;
+    width: 100%;
+    background-color:orange;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-#cb_2 {
-    height: 100%;
-    width: 25%;
-    background-color: brown;
+.cb-11{
+    width: 35%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
 }
 
-/* styling for option bar*/
-#options{
-    height: 4vh;
+.cb-12{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cb_2{
+    height: 45%;
     width: 100%;
-    background-color: rgb(192, 104, 104);
-    position: absolute;
-    top: 0;   
+    background-color: rgb(101, 165, 42);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-#box{
-    height: 100px;
-    width: 100px;
-    background-color: red;
+a{
+    color: white;
 }
 
-@media(max-width : 600px) {
-    #interoption{
-        width: 80%;
-        font-size: 0.8rem;
-    }
+/* changing for responsive website */
 
-    #options{
-        width: 100%;
+@media(min-width:600px){
+    .menu{
+        position: relative;
+        right: 67%;
     }
 }
 
-/* middle level part*/
-
-#left-side{
-    height: 50vh;
-    width: 30%;
-    background-color: yellow;
-    position: absolute;
-    top: 4vh;
-}
-
-#right-side{
-    height: 50vh;
-    width: 30%;
-    background-color: greenyellow;
-    position: absolute;
-    right: 0;
-    top: 4vh;
-}
-
-#main-div{
-    height: 50vh;
-    width: 40%;
-    background-color: orange;
-    position: absolute;
-    left: 30%;
-    top: 4vh;
-}
-
-#left-side-bottom{
-    height: 50vh;
-    width: 50%;
-    background-color: cyan;
-    position: absolute;
-    left: 0;
-    top: 54vh;
-}
-
-#right-side-bottom{
-    height: 50vh;
-    width: 50%;
-    background-color: lightcoral;
-    position: absolute;
-    right: 0;
-    top: 54vh;
-}
-
-
-
-@media(max-width : 600px) {
-    #main-div{
-        height: 50vh;
-        width: 100vh;
+@media(min-width:900px){
+    .profile-photo{
         position: absolute;
-        left: 0;
+        right: 3rem;
+        bottom: 13rem;
     }
-
-    #left-side{
-        position: fixed;
-        top: 55vh;
-        width: 100%;
-        z-index: 1;
+    .main-heading{
+        position: absolute;
+        top: 17rem;
+        font-size: 2.5rem;
     }
-
-    #right-side{
-        width: 100%;
-        position: fixed;
-        top: 105vh;
+    .name{
+        position: absolute;
+        top: 22rem;
+        left: 40%;
+        font-size: 2.5rem;
     }
-
-    #left-side-bottom{
-        width: 100%;
-        position: fixed;
-        top: 155vh;
+    .menu{
+        position: relative;
+        right: 70%;
     }
+}
 
-    #right-side-bottom{
-        width: 100%;
-        position: fixed;
-        top: 205vh;
+@media(min-width: 1000px){
+    .main-heading{
+        font-size: 3rem;
+    }
+    .name{
+        font-size: 3rem;
     }
 }

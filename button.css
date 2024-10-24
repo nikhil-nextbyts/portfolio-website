@@ -1,1 +1,34 @@
-/* here i am create a cool togle button*/
+.nav-button{
+    height: 100%;
+    width: 35%;
+    background-color: lightseagreen;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 3px solid white;
+}
+
+button{
+    width: 7rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media(min-width:900px){
+    .nav-button{
+        width: 15%;
+    }
+}
+
+@media(min-width:600px){
+    .nav-button{
+        width: 25%;
+    }
+}
