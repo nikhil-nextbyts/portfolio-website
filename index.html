@@ -11,21 +11,29 @@
 <body>
     <header>
         <div class="nav">
-            <div class="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <button id="menu-toggle" class="hamburger-icon">
+                &#9776; <!-- This is the hamburger icon (three lines) -->
+            </button>
             <div class="nav-button">
-                <button>Change Mode</button>
+                <button class="mode">Dark Mode</button>
             </div>
         </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <!--main structure-->
     <main>
-        <div class="main">
+        <div class="mainContainer">
             <h1 class="main-heading">HELLO...</h1>
             <h2 class="name">I'm Nikhil</h2>
             </br>
-            <p class="main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br> Dignissimos consequuntur nulla, pariatur illum molestias</p>
+            <p class="main-text">MCA student and a dedicated learner...</p>
             <div class="profile-photo"></div>
         </div>
     </main>
@@ -42,19 +50,19 @@
                 </div>
             </div>
             <div id="cb_2">
-                <a href="https://www.linkedin.com/in/nikhil-saini-0a0b59223">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/nikhil-saini-0a0b59223" class="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i></i>
                 </a>
-                <a href="https://x.com/nikhil_sain_i?t=9YJn481vHUiyseFBYYGUTA&s=08">
+                <a href="https://x.com/nikhil_sain_i?t=9YJn481vHUiyseFBYYGUTA&s=08" class="twitter">
                     <i class="fa-brands fa-square-x-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/nikhil_sain_i/profilecard/?igsh=MXFjOG55eDh6dm12NQ==">
+                <a href="https://www.instagram.com/nikhil_sain_i/profilecard/?igsh=MXFjOG55eDh6dm12NQ==" class="instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100033545142597&mibextid=ZbWKwL">
+                <a href="https://www.facebook.com/profile.php?id=100033545142597&mibextid=ZbWKwL" class="facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="none"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/nikhil-nextbyts" class="github"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>
