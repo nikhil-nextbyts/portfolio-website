@@ -66,7 +66,7 @@ header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.profile-photo{
+img{
     height: 18rem;
     width: 18rem;
     position: relative;
@@ -134,12 +134,12 @@ header{
 }
 
 @media(min-width:900px){
-    .profile-photo{
+    img{
         position: absolute;
         right: 3rem;
         bottom: 13rem;
     }
-    .main-heading{
+    .main-heading{  
         position: absolute;
         top: 17rem;
         font-size: 2.5rem;

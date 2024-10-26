@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 .mode:hover{
-    font-size: me;
+    font-size: medium;
 }
 
 .dark{
@@ -74,6 +74,12 @@
     border-end-end-radius: 20%;
     color: #fff1e6;
 }
+
+.home:hover{
+    font-weight: 800;
+}
+
+
 
 .nav-menu ul {
     list-style-type: none;
