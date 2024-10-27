@@ -19,6 +19,7 @@ body{
 
 header{
     background-color: #283618;
+    
 }
 
 .menu{
@@ -41,7 +42,7 @@ header{
 
 /*styling for main content*/
 .mainContainer{
-    min-height: 100vh;
+    min-height: 90vh;
     min-width: 80vw;
     background-color:#faf9f6;
     display: flex;
@@ -69,8 +70,6 @@ header{
 img{
     height: 18rem;
     width: 18rem;
-    position: relative;
-    bottom: 3rem;
     border-radius: 50%;
     background-image: url("profile\ photo.jpg") ;
     background-size: cover;

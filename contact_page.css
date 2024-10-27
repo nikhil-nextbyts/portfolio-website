@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 3px solid white;
 }
 
 @media(min-width:500px){
@@ -81,7 +82,6 @@ body{
 body {
     background: #0A212E;
     margin: 0px;
-    ovrflow: hidden;
     animation: color-loop 18s infinite;
   }
   
@@ -102,3 +102,27 @@ body {
       background: #2CAB5B;
     }
   }
+
+.box{
+    height: 2rem;
+    width: 4rem;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    border: 2px solid white;
+    background-color: #606C38;
+    color: white;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.home-page{
+    position: relative;
+    top: 3px;
+}
